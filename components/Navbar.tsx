@@ -98,7 +98,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
 
       {/* Mobile Menu Content */}
       <div
-        className={`fixed top-0 right-0 h-screen w-full max-w-sm bg-stone-950 shadow-2xl z-50 flex flex-col p-12 transition-transform duration-500 ease-in-out md:hidden border-l border-white/5 ${isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 h-screen w-full max-w-sm bg-zinc-900/90 backdrop-blur-xl shadow-2xl z-50 flex flex-col p-12 transition-transform duration-500 ease-in-out md:hidden border-l border-white/5 ${isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         <div className="flex justify-between items-center mb-16">
@@ -127,7 +127,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
           ))}
         </nav>
 
-        <div className="mt-auto space-y-12">
+        <div className="mt-16 space-y-12">
           <div className="flex items-center gap-8 text-white/40">
             <a href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">
               <Instagram size={28} />

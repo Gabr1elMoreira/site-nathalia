@@ -43,28 +43,37 @@ const App: React.FC = () => {
         {/* About Section */}
         <Section id="about" className="py-24 md:py-32 bg-transparent">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-            <div className="relative p-8 md:p-12 flex justify-center items-center">
-              {/* Quadrado Decorativo de Fundo - Dourado sutil */}
-              <div className="absolute inset-4 md:inset-6 border-2 border-brand-500/20 z-0"></div>
-
-              {/* Container Principal da Foto */}
-              <div className="relative z-10 bg-white/5 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
-                <img
-                  src="https://i.imgur.com/4PdinsP.jpeg"
-                  alt="Nathalia Abreu Lash Designer"
-                  className="w-full h-[450px] md:h-[550px] lg:h-[650px] object-cover"
-                />
+            <div className="flex flex-col">
+              {/* Título visível apenas no mobile, acima da foto */}
+              <div className="md:hidden mb-10 space-y-2 animate-fade-in-up">
+                <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
+                <h2 className="text-4xl sm:text-5xl font-serif text-white leading-tight">Nathalia Abreu</h2>
               </div>
 
-              {/* Selo de Experiência */}
-              <div className="absolute bottom-16 -right-2 md:-right-4 bg-brand-600 text-white p-4 md:p-8 z-20 shadow-2xl border border-brand-400">
-                <p className="text-2xl md:text-4xl font-serif mb-1 leading-none">3+</p>
-                <p className="text-[0.5rem] md:text-[0.6rem] uppercase tracking-widest font-bold">Anos de<br />Experiência</p>
+              <div className="relative p-8 md:p-12 flex justify-center items-center">
+                {/* Quadrado Decorativo de Fundo - Dourado sutil */}
+                <div className="absolute inset-4 md:inset-6 border-2 border-brand-500/20 z-0"></div>
+
+                {/* Container Principal da Foto */}
+                <div className="relative z-10 bg-white/5 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
+                  <img
+                    src="https://i.imgur.com/4PdinsP.jpeg"
+                    alt="Nathalia Abreu Lash Designer"
+                    className="w-full h-[450px] md:h-[550px] lg:h-[650px] object-cover"
+                  />
+                </div>
+
+                {/* Selo de Experiência */}
+                <div className="absolute bottom-16 -right-2 md:-right-4 bg-brand-600 text-white p-4 md:p-8 z-20 shadow-2xl border border-brand-400">
+                  <p className="text-2xl md:text-4xl font-serif mb-1 leading-none">3+</p>
+                  <p className="text-[0.5rem] md:text-[0.6rem] uppercase tracking-widest font-bold">Anos de<br />Experiência</p>
+                </div>
               </div>
             </div>
 
             <div className="space-y-8 animate-fade-in-up">
-              <div className="space-y-2">
+              {/* Título visível apenas no desktop, posição original */}
+              <div className="hidden md:block space-y-2">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">Nathalia Abreu</h2>
               </div>
