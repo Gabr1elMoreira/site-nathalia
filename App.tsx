@@ -287,8 +287,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 flex flex-col items-center text-[0.55rem] tracking-[0.2em] uppercase font-black text-white/40 gap-4">
-            <p>© {new Date().getFullYear()} Nathália Abreu Studio.</p>
-            <p>Brasília </p>
+            <p>© {new Date().getFullYear()} Nathália Abreu Studio. Todos os direitos reservados.</p>
           </div>
         </footer>
       </div>
