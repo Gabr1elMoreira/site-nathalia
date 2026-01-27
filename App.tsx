@@ -41,11 +41,11 @@ const App: React.FC = () => {
         <ServiceModal service={selectedService} onClose={closeServiceModal} />
 
         {/* About Section */}
-        <Section id="about" className="py-24 md:py-32 bg-transparent">
+        <Section id="about" className="py-8 md:py-32 bg-transparent">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex flex-col">
               {/* Título visível apenas no mobile, acima da foto */}
-              <div className="md:hidden mb-10 space-y-2 animate-fade-in-up">
+              <div className="md:hidden mb-6 space-y-2 animate-fade-in-up">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
                 <h2 className="text-4xl sm:text-5xl font-serif text-white leading-tight">Nathalia Abreu</h2>
               </div>
@@ -77,8 +77,6 @@ const App: React.FC = () => {
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">Nathalia Abreu</h2>
               </div>
-
-              <div className="h-[2px] w-20 bg-brand-600" />
 
               <p className="text-white leading-relaxed font-light text-lg md:text-xl">
                 Com formação profissional e paixão pela excelência, transformo olhares através de técnicas avançadas de lash design.
@@ -167,7 +165,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* Scheduling / CTA Section */}
-        <section id="schedule" className="py-32 bg-zinc-900/60 relative overflow-hidden text-center px-6 border-y border-white/10">
+        <section id="schedule" className="py-16 md:py-32 bg-zinc-900/60 relative overflow-hidden text-center px-6 border-y border-white/10">
           <div className="max-w-4xl mx-auto relative z-10 space-y-12">
             <div className="space-y-4">
               <h2 className="text-4xl sm:text-5xl md:text-8xl font-serif text-white leading-tight">Agende sua <br /><span className="text-brand-600 italic">experiência</span></h2>
@@ -206,7 +204,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Footer */}
-        <footer className="bg-zinc-950/90 backdrop-blur-md text-white py-16 border-t border-white/10">
+        <footer className="bg-zinc-950/90 backdrop-blur-md text-white py-12 md:py-16 border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 items-start text-center">
             {/* Column 1: Brand */}
             <div className="flex flex-col items-center space-y-6">
@@ -216,9 +214,6 @@ const App: React.FC = () => {
                   alt="Logo"
                   className="h-28 w-auto object-contain mb-2 filter brightness-110 drop-shadow-2xl"
                 />
-                <span className="text-brand-600 tracking-[0.4em] text-[0.65rem] uppercase font-black">
-                  Nathalia Abreu Studio
-                </span>
               </div>
             </div>
 

@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
       {/* Background is now global in App.tsx */}
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto space-y-10">
-        <div className="space-y-4 animate-fade-in-up">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto space-y-6 md:space-y-10">
+        <div className="space-y-2 md:space-y-4 animate-fade-in-up">
           <h2 className="text-xs md:text-sm tracking-[0.6em] uppercase text-white font-bold">
             Brasília • L2 Sul • Asa Sul
           </h2>
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           Especialista em extensões de cílios premium e design estratégico do olhar.
         </p>
 
-        <div className="pt-10 flex flex-col md:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <div className="pt-6 md:pt-10 flex flex-col md:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <a href={CONTACT_INFO.calendly} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
             <Button variant="brand" className="w-full md:w-auto px-12 py-5 shadow-2xl">
               Agendar Experiência
