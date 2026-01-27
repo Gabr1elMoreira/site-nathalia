@@ -5,7 +5,7 @@ import { CONTACT_INFO } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-transparent">
+    <section id="home" className="relative min-h-[80vh] md:h-screen flex items-center justify-center overflow-hidden bg-transparent">
       {/* Background is now global in App.tsx */}
 
       {/* Content */}

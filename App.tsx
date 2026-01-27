@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <ServiceModal service={selectedService} onClose={closeServiceModal} />
 
         {/* About Section */}
-        <Section id="about" className="py-8 md:py-32 bg-transparent">
+        <Section id="about" className="py-4 md:py-32 bg-transparent">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex flex-col">
               {/* Título visível apenas no mobile, acima da foto */}
@@ -57,7 +57,7 @@ const App: React.FC = () => {
                 {/* Container Principal da Foto */}
                 <div className="relative z-10 bg-white/5 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
                   <img
-                    src="https://i.imgur.com/4PdinsP.jpeg"
+                    src="Nathalia.jpeg"
                     alt="Nathália Abreu Lash Designer"
                     className="w-full h-[450px] md:h-[550px] lg:h-[650px] object-cover"
                   />
@@ -71,7 +71,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-8 animate-fade-in-up md:mt-0 -mt-8">
+            <div className="space-y-8 animate-fade-in-up md:mt-0 -mt-16">
               {/* Título visível apenas no desktop, posição original */}
               <div className="hidden md:block space-y-2">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
@@ -191,8 +191,8 @@ const App: React.FC = () => {
                 <div className="space-y-1">
                   <h3 className="font-serif text-xl text-white uppercase tracking-widest">Localização</h3>
                   <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
-                    - Asa Sul, Brasília - DF<br />
-                    - L2 Sul - Studio da Beleza
+                    • Asa Sul, Brasília - DF<br />
+                    • L2 Sul - Studio da Beleza
                   </p>
                 </div>
               </div>
