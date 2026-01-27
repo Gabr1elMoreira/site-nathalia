@@ -45,9 +45,9 @@ const App: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex flex-col">
               {/* Título visível apenas no mobile, acima da foto */}
-              <div className="md:hidden mb-6 space-y-2 animate-fade-in-up">
+              <div className="md:hidden mb-6 space-y-2 animate-fade-in-up text-center">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
-                <h2 className="text-4xl sm:text-5xl font-serif text-white leading-tight">Nathalia Abreu</h2>
+                <h2 className="text-4xl sm:text-5xl font-serif text-white leading-tight">Nathália Abreu</h2>
               </div>
 
               <div className="relative p-8 md:p-12 flex justify-center items-center">
@@ -58,7 +58,7 @@ const App: React.FC = () => {
                 <div className="relative z-10 bg-white/5 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
                   <img
                     src="https://i.imgur.com/4PdinsP.jpeg"
-                    alt="Nathalia Abreu Lash Designer"
+                    alt="Nathália Abreu Lash Designer"
                     className="w-full h-[450px] md:h-[550px] lg:h-[650px] object-cover"
                   />
                 </div>
@@ -71,11 +71,11 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-8 animate-fade-in-up">
+            <div className="space-y-8 animate-fade-in-up md:mt-0 -mt-8">
               {/* Título visível apenas no desktop, posição original */}
               <div className="hidden md:block space-y-2">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">Nathalia Abreu</h2>
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">Nathália Abreu</h2>
               </div>
 
               <p className="text-white leading-relaxed font-light text-lg md:text-xl">
@@ -99,7 +99,7 @@ const App: React.FC = () => {
                 ))}
               </div>
 
-              <div className="pt-10">
+              <div className="pt-10 flex justify-center md:justify-start">
                 <a href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer">
                   <Button variant="brand" className="px-12 py-5 text-xs shadow-2xl shadow-brand-500/20 transition-transform hover:scale-105 active:scale-95">
                     CONHECER MEU TRABALHO
@@ -174,22 +174,27 @@ const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-10 pt-8 max-w-3xl mx-auto text-left">
-              <div className="bg-zinc-900/80 backdrop-blur-xl p-10 border border-white/20 shadow-2xl group hover:border-brand-500/20 transition-all">
-                <Clock className="w-12 h-12 mb-8 text-brand-600" />
-                <h3 className="font-serif text-2xl mb-4 text-white uppercase tracking-widest">Atendimento</h3>
-                <p className="text-xs text-white leading-8 tracking-widest uppercase font-bold">
-                  Terça a Sexta: 09:00 - 19:00<br />
-                  Sábado: 09:00 - 17:00
-                </p>
+            <div className="grid md:grid-cols-2 gap-10 pt-8 max-w-4xl mx-auto text-left">
+              <div className="bg-zinc-900/80 backdrop-blur-xl p-8 border border-white/20 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
+                <Clock className="w-12 h-12 text-brand-600 shrink-0" />
+                <div className="space-y-1">
+                  <h3 className="font-serif text-xl text-white uppercase tracking-widest">Atendimento</h3>
+                  <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
+                    Terça a Sexta: 09:00 - 19:00<br />
+                    Sábado: 09:00 - 17:00
+                  </p>
+                </div>
               </div>
-              <div className="bg-zinc-800/50 backdrop-blur-xl p-10 border border-white/10 shadow-2xl group hover:border-brand-500/20 transition-all">
-                <MapPin className="w-12 h-12 mb-8 text-brand-600" />
-                <h3 className="font-serif text-2xl mb-4 text-white uppercase tracking-widest">Localização</h3>
-                <p className="text-xs text-white leading-8 tracking-widest uppercase font-bold">
-                  Asa Sul, Brasília - DF<br />
-                  L2 Sul - Studio da Beleza
-                </p>
+
+              <div className="bg-zinc-800/50 backdrop-blur-xl p-8 border border-white/10 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
+                <MapPin className="w-12 h-12 text-brand-600 shrink-0" />
+                <div className="space-y-1">
+                  <h3 className="font-serif text-xl text-white uppercase tracking-widest">Localização</h3>
+                  <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
+                    - Asa Sul, Brasília - DF<br />
+                    - L2 Sul - Studio da Beleza
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -282,7 +287,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 flex flex-col items-center text-[0.55rem] tracking-[0.2em] uppercase font-black text-white/40 gap-4">
-            <p>© {new Date().getFullYear()} Nathalia Abreu Studio.</p>
+            <p>© {new Date().getFullYear()} Nathália Abreu Studio.</p>
             <p>Brasília </p>
           </div>
         </footer>
