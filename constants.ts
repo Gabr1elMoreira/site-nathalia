@@ -74,7 +74,7 @@ export const SERVICES: Service[] = [
     duration: '2 horas',
     maintenance: '15 a 20 dias',
     image: 'Shine.jpg',
-    priceEstimate: 'R$ 190,00'
+    priceEstimate: 'R$ 130,00'
   },
   {
     id: '7',
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
 
   {
     id: '9',
-    title: 'Clássico Fio a Fio',
+    title: 'Design de Sobrancelha',
     description: 'Aplicação de um fio sintético sobre cada fio natural. Resultado ultra natural e elegante.',
     fullDescription: 'A elegância da naturalidade. Nesta técnica, acoplamos um fio de extensão para cada fio natural seu. O objetivo é alongar, curvar e dar um leve volume, imitando seus cílios naturais, porém perfeitos. Ideal para o dia a dia e para quem nunca fez extensão.',
     duration: '1h 30min',
