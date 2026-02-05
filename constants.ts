@@ -21,6 +21,18 @@ export const SERVICES: Service[] = [
   },
   {
     id: '2',
+    title: 'Volume Brasileiro Marrom',
+    description: 'Técnica popular que proporciona volume moderado e aspecto de rímel, mantendo a leveza.',
+    fullDescription: 'A técnica queridinha do momento! O Volume Brasileiro utiliza fios tecnológicos em formato de Y, que proporcionam um preenchimento maior que o clássico, mas sem o peso do volume russo. O resultado é um olhar marcante, com efeito de rímel intenso e ótima retenção.',
+    duration: '2 horas',
+    maintenance: '15 a 20 dias',
+    image: 'VolumeBrasileiroMarrom.jpg',
+    priceEstimate: 'R$ 130,00'
+  },
+
+
+  {
+    id: '3',
     title: 'Volume Egípcio',
     description: 'Fios em formato de W que criam um olhar marcante com densidade e sofisticação.',
     fullDescription: 'Para quem ama volume e sofisticação. Utilizamos fios tecnológicos em formato de W (três fios unidos na base). Essa técnica cobre pequenas falhas naturais e entrega um olhar denso, escuro e delineado, ideal para quem busca destaque total.',
@@ -29,10 +41,22 @@ export const SERVICES: Service[] = [
     image: 'Egipcio.jpg',
     priceEstimate: 'R$ 130,00'
   },
+
+  {
+    id: '4',
+    title: 'Volume Egípcio Marrom',
+    description: 'Fios em formato de W que criam um olhar marcante com densidade e sofisticação.',
+    fullDescription: 'Para quem ama volume e sofisticação. Utilizamos fios tecnológicos em formato de W (três fios unidos na base). Essa técnica cobre pequenas falhas naturais e entrega um olhar denso, escuro e delineado, ideal para quem busca destaque total.',
+    duration: '2h 30min',
+    maintenance: '20 a 25 dias',
+    image: 'EgipcioMarrom.jpg',
+    priceEstimate: 'R$ 130,00'
+  },
+
   {
 
 
-    id: '3',
+    id: '5',
     title: 'Brow Lamination',
     description: 'Alinhamento dos fios da sobrancelha para um visual mais cheio e modelado.',
     fullDescription: 'Técnica russa de reestruturação dos fios da sobrancelha. Alisamos e alinhamos os fios para que fiquem mais maleáveis, permitindo penteá-los para cima para cobrir falhas e dar aquele efeito "wild" e encorpado super moderno.',
@@ -43,7 +67,7 @@ export const SERVICES: Service[] = [
 
   },
   {
-    id: '4',
+    id: '6',
     title: 'Shine',
     description: 'A mistura de 3 técnicas e um efeito que abraça o olhar.',
     fullDescription: 'A mistura de 3 técnicas e um efeito que abraça o olhar, entregando naturalidade, sofisticação e sensualidade.',
@@ -53,7 +77,7 @@ export const SERVICES: Service[] = [
     priceEstimate: 'R$ 190,00'
   },
   {
-    id: '5',
+    id: '7',
     title: 'Lash Lifting',
     description: 'Tratamento dos próprios cílios naturais, curvando-os e tingindo-os. Dura até 45 dias.',
     fullDescription: 'Não é extensão, é tratamento! O Lash Lifting curva, hidrata e tinge seus próprios cílios naturais. Utilizamos produtos com vitaminas que nutrem os fios. O resultado é um olhar acordado e cílios curvadinhos como se estivesse sempre de curvex e rímel.',
@@ -62,8 +86,20 @@ export const SERVICES: Service[] = [
     image: 'LashLifting.jpg',
     priceEstimate: 'R$ 100,00'
   },
+
   {
-    id: '6',
+    id: '8',
+    title: 'Efeito Fox Eyes',
+    description: 'Técnica que alonga e valoriza o olhar, com fios aplicados estrategicamente no canto externo.',
+    fullDescription: 'Criando um efeito lifting elegante e moderno. Ideal para quem busca um visual sofisticado, marcante e cheio de personalidade.',
+    duration: '1 hora',
+    maintenance: 'Refazer a cada 45 dias',
+    image: 'FoxEyes.jpeg',
+    priceEstimate: 'R$ 130,00'
+  },
+
+  {
+    id: '9',
     title: 'Clássico Fio a Fio',
     description: 'Aplicação de um fio sintético sobre cada fio natural. Resultado ultra natural e elegante.',
     fullDescription: 'A elegância da naturalidade. Nesta técnica, acoplamos um fio de extensão para cada fio natural seu. O objetivo é alongar, curvar e dar um leve volume, imitando seus cílios naturais, porém perfeitos. Ideal para o dia a dia e para quem nunca fez extensão.',
