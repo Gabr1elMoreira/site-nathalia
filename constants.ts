@@ -17,7 +17,7 @@ export const SERVICES: Service[] = [
     duration: '2 horas',
     maintenance: '15 a 20 dias',
     image: 'VolumeBrasileiro.jpg',
-    priceEstimate: 'R$ 180,00'
+    priceEstimate: 'R$ 120,00'
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
     duration: '2h 30min',
     maintenance: '20 a 25 dias',
     image: 'Egipcio.jpg',
-    priceEstimate: 'R$ 200,00'
+    priceEstimate: 'R$ 130,00'
   },
   {
 
@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
     duration: '50 min',
     maintenance: 'Refazer a cada 30-40 dias',
     image: 'BrowLamination.jpg',
-    priceEstimate: 'R$ 110,00'
+    priceEstimate: 'R$ 100,00'
 
   },
   {
@@ -60,7 +60,7 @@ export const SERVICES: Service[] = [
     duration: '1 hora',
     maintenance: 'Refazer a cada 45 dias',
     image: 'LashLifting.jpg',
-    priceEstimate: 'R$ 120,00'
+    priceEstimate: 'R$ 100,00'
   },
   {
     id: '6',
