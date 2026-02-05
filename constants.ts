@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [
     fullDescription: 'A técnica queridinha do momento! O Volume Brasileiro utiliza fios tecnológicos em formato de Y, que proporcionam um preenchimento maior que o clássico, mas sem o peso do volume russo. O resultado é um olhar marcante, com efeito de rímel intenso e ótima retenção.',
     duration: '2 horas',
     maintenance: '15 a 20 dias',
-    image: 'VolumeBrasileiroMarrom.jpg',
+    image: 'VolumeBrasileiroMarrom.jpeg',
     priceEstimate: 'R$ 130,00'
   },
 
