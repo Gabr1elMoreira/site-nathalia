@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto space-y-6 md:space-y-10 pt-32 md:pt-0">
         <div className="space-y-2 md:space-y-4 animate-fade-in-up">
           <h2 className="text-xs md:text-sm tracking-[0.6em] uppercase text-white font-bold">
-            Brasília • L2 Sul • Asa Sul
+            Brasília • Asa Sul
           </h2>
         </div>
 
