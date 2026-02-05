@@ -180,8 +180,8 @@ const App: React.FC = () => {
                 <div className="space-y-1">
                   <h3 className="font-serif text-xl text-white uppercase tracking-widest">Atendimento</h3>
                   <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
-                    Terça a Sexta: 09:00 - 19:00<br />
-                    Sábado: 09:00 - 17:00
+                    Terça a Sexta: 08:30 — 18:30<br />
+                    Sábado: 08:30 — 17:30
                   </p>
                 </div>
               </div>
@@ -191,8 +191,7 @@ const App: React.FC = () => {
                 <div className="space-y-1">
                   <h3 className="font-serif text-xl text-white uppercase tracking-widest">Localização</h3>
                   <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
-                    • Asa Sul, Brasília - DF<br />
-                    • L2 Sul - Studio da Beleza
+                    • Vila Telebrasília, Brasília - DF<br />
                   </p>
                 </div>
               </div>
@@ -238,11 +237,11 @@ const App: React.FC = () => {
               <div className="text-[0.65rem] tracking-[0.15em] uppercase font-bold text-white space-y-4">
                 <div>
                   <span className="text-white block mb-1">Terça a Sexta</span>
-                  <span className="font-medium text-white/80">09:00 — 19:00</span>
+                  <span className="font-medium text-white/80">08:30 — 18:30</span>
                 </div>
                 <div>
                   <span className="text-white block mb-1">Sábado</span>
-                  <span className="font-medium text-white/80">09:00 — 17:00</span>
+                  <span className="font-medium text-white/80">08:30 — 17:30</span>
                 </div>
               </div>
             </div>
