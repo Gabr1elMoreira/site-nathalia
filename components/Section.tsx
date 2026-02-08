@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({
   subtitle,
   children,
   className = '',
-  dark = true // Default to true now for dark theme
+  dark = false
 }) => {
   return (
     <section
@@ -26,12 +26,12 @@ const Section: React.FC<SectionProps> = ({
         {(title || subtitle) && (
           <div className="text-center mb-10 md:mb-20 space-y-6">
             {title && (
-              <h2 className="text-4xl md:text-6xl font-serif text-white tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-serif text-stone-900 tracking-tight">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-white max-w-2xl mx-auto font-light text-base md:text-xl italic">
+              <p className="text-stone-700 max-w-2xl mx-auto font-light text-base md:text-xl italic">
                 {subtitle}
               </p>
             )}

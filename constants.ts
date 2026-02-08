@@ -118,7 +118,7 @@ export const CONTACT_INFO = {
   calendly: 'https://calendly.com/ingridabs3/1h30min'
 };
 
-/*
+
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
@@ -139,7 +139,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5
   }
 ];
-
+/*
 export const COURSES: Course[] = [
   {
     id: '1',

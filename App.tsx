@@ -8,6 +8,7 @@ import ServiceModal from './components/ServiceModal';
 import { SERVICES, CONTACT_INFO } from './constants';
 import { Service } from './types';
 import { MapPin, Instagram, Mail, Phone, Clock, CheckCircle, Info, ChevronRight } from 'lucide-react';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
@@ -21,16 +22,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-zinc-950 text-white">
-      {/* Background Image fixed for the entire site - DARK PREMIUM AESTHETIC */}
+    <div className="min-h-screen relative bg-brand-50 text-stone-900">
+      {/* Background Image fixed for the entire site - LIGHT PREMIUM AESTHETIC */}
       <div className="fixed inset-0 z-0">
         <img
           src="Background.png"
           alt="Background"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/40 via-transparent to-brand-900/10" />
-        <div className="absolute inset-0 bg-zinc-950/40 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-brand-200/20 via-transparent to-brand-100/10" />
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-[0.5px]" />
       </div>
 
       <div className="relative z-10">
@@ -47,7 +48,7 @@ const App: React.FC = () => {
               {/* Título visível apenas no mobile, acima da foto */}
               <div className="md:hidden mb-6 space-y-2 animate-fade-in-up text-center">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
-                <h2 className="text-4xl sm:text-5xl font-serif text-white leading-tight">Nathália Abreu</h2>
+                <h2 className="text-4xl sm:text-5xl font-serif text-stone-900 leading-tight">Nathália Abreu</h2>
               </div>
 
               <div className="relative p-8 md:p-12 flex justify-center items-center">
@@ -55,7 +56,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-4 md:inset-6 border-2 border-brand-500/20 z-0"></div>
 
                 {/* Container Principal da Foto */}
-                <div className="relative z-10 bg-white/5 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
+                <div className="relative z-10 bg-white/20 p-2 shadow-2xl border border-brand-500/10 backdrop-blur-sm overflow-hidden w-full">
                   <img
                     src="Nathalia.jpeg"
                     alt="Nathália Abreu Lash Designer"
@@ -75,10 +76,10 @@ const App: React.FC = () => {
               {/* Título visível apenas no desktop, posição original */}
               <div className="hidden md:block space-y-2">
                 <h3 className="text-brand-600 tracking-[0.3em] text-xs uppercase font-bold">Especialista em Olhar</h3>
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white leading-tight">Nathália Abreu</h2>
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-stone-900 leading-tight">Nathália Abreu</h2>
               </div>
 
-              <p className="text-white leading-relaxed font-light text-lg md:text-xl">
+              <p className="text-stone-800 leading-relaxed font-light text-lg md:text-xl">
                 Com formação profissional e paixão pela excelência, transformo olhares através de técnicas avançadas de lash design.
                 Meu compromisso é realçar sua beleza única, respeitando a saúde dos seus fios naturais.
               </p>
@@ -94,7 +95,7 @@ const App: React.FC = () => {
                     <div className="w-10 h-10 rounded-full bg-brand-500/10 flex items-center justify-center border border-brand-500/20 group-hover:bg-brand-500/20 transition-all">
                       <CheckCircle className="text-brand-600 w-5 h-5" />
                     </div>
-                    <span className="text-white font-medium tracking-wide text-sm">{item}</span>
+                    <span className="text-stone-900 font-medium tracking-wide text-sm">{item}</span>
                   </div>
                 ))}
               </div>
@@ -116,7 +117,7 @@ const App: React.FC = () => {
             {SERVICES.map((service) => (
               <div
                 key={service.id}
-                className="group relative bg-zinc-900/60 backdrop-blur-xl border border-white/20 p-1 transition-all duration-500 hover:border-brand-500/40 cursor-pointer overflow-hidden shadow-2xl flex flex-col h-full"
+                className="group relative bg-white/60 backdrop-blur-xl border border-brand-200 p-1 transition-all duration-500 hover:border-brand-500/40 cursor-pointer overflow-hidden shadow-2xl flex flex-col h-full"
                 onClick={() => openServiceModal(service)}
               >
                 <div className="relative h-72 md:h-80 overflow-hidden shrink-0">
@@ -125,8 +126,8 @@ const App: React.FC = () => {
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
-                    <span className="px-8 py-3 bg-white text-zinc-900 text-[0.65rem] uppercase tracking-widest font-bold">
+                  <div className="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+                    <span className="px-8 py-3 bg-brand-600 text-white text-[0.65rem] uppercase tracking-widest font-bold">
                       DESCUBRA MAIS
                     </span>
                   </div>
@@ -136,7 +137,7 @@ const App: React.FC = () => {
                   {/* Header Area: Fixed height to handle 1 vs 2 lines of title */}
                   <div className="min-h-[4rem] md:min-h-[4.5rem] mb-6 flex flex-col justify-between">
                     <div className="flex justify-between items-start gap-4">
-                      <h3 className="text-lg md:text-xl font-serif text-white group-hover:text-brand-600 transition-colors uppercase tracking-widest leading-tight">
+                      <h3 className="text-lg md:text-xl font-serif text-stone-900 group-hover:text-brand-600 transition-colors uppercase tracking-widest leading-tight">
                         {service.title}
                       </h3>
                       <span className="text-brand-600 font-bold text-xs md:text-sm tracking-widest whitespace-nowrap pt-1">
@@ -148,13 +149,13 @@ const App: React.FC = () => {
 
                   {/* Body Area: Flex grow takes available space */}
                   <div className="flex-grow mb-8">
-                    <p className="text-white font-light text-sm leading-relaxed line-clamp-3">
+                    <p className="text-stone-700 font-light text-sm leading-relaxed line-clamp-3">
                       {service.description}
                     </p>
                   </div>
 
                   {/* Footer Area: Fixed at the bottom */}
-                  <div className="pt-4 flex items-center gap-2 text-brand-600 text-[0.6rem] md:text-[0.65rem] uppercase tracking-[0.2em] font-black border-t border-white/5">
+                  <div className="pt-4 flex items-center gap-2 text-brand-600 text-[0.6rem] md:text-[0.65rem] uppercase tracking-[0.2em] font-black border-t border-stone-100">
                     <Clock size={14} className="text-brand-600" />
                     <span>Incluso: {service.duration}</span>
                   </div>
@@ -165,32 +166,32 @@ const App: React.FC = () => {
         </Section>
 
         {/* Scheduling / CTA Section */}
-        <section id="schedule" className="py-16 md:py-32 bg-zinc-900/60 relative overflow-hidden text-center px-6 border-y border-white/10">
+        <section id="schedule" className="py-16 md:py-32 bg-brand-100/20 relative overflow-hidden text-center px-6 border-y border-stone-200">
           <div className="max-w-4xl mx-auto relative z-10 space-y-12">
             <div className="space-y-4">
-              <h2 className="text-4xl sm:text-5xl md:text-8xl font-serif text-white leading-tight">Agende sua <br /><span className="text-brand-600 italic">experiência</span></h2>
-              <p className="text-white font-light text-xl max-w-2xl mx-auto leading-relaxed">
+              <h2 className="text-4xl sm:text-5xl md:text-8xl font-serif text-stone-900 leading-tight">Agende sua <br /><span className="text-brand-600 italic">experiência</span></h2>
+              <p className="text-stone-700 font-light text-xl max-w-2xl mx-auto leading-relaxed">
                 Um momento exclusivo dedicado à sua beleza e bem-estar no coração de Brasília.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-10 pt-8 max-w-4xl mx-auto text-left">
-              <div className="bg-zinc-900/80 backdrop-blur-xl p-8 border border-white/20 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
+              <div className="bg-white/80 backdrop-blur-xl p-8 border border-brand-200 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
                 <Clock className="w-12 h-12 text-brand-600 shrink-0" />
                 <div className="space-y-1">
-                  <h3 className="font-serif text-xl text-white uppercase tracking-widest">Atendimento</h3>
-                  <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
+                  <h3 className="font-serif text-xl text-stone-900 uppercase tracking-widest">Atendimento</h3>
+                  <p className="text-[0.65rem] text-stone-600 leading-relaxed tracking-widest uppercase font-bold">
                     Terça a Sexta: 08:30 — 18:30<br />
                     Sábado: 08:30 — 17:30
                   </p>
                 </div>
               </div>
 
-              <div className="bg-zinc-800/50 backdrop-blur-xl p-8 border border-white/10 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
+              <div className="bg-brand-100/40 backdrop-blur-xl p-8 border border-brand-200 shadow-2xl group hover:border-brand-500/20 transition-all flex items-center gap-6">
                 <MapPin className="w-12 h-12 text-brand-600 shrink-0" />
                 <div className="space-y-1">
-                  <h3 className="font-serif text-xl text-white uppercase tracking-widest">Localização</h3>
-                  <p className="text-[0.65rem] text-white/80 leading-relaxed tracking-widest uppercase font-bold">
+                  <h3 className="font-serif text-xl text-stone-900 uppercase tracking-widest">Localização</h3>
+                  <p className="text-[0.65rem] text-stone-600 leading-relaxed tracking-widest uppercase font-bold">
                     • Vila Telebrasília, Brasília - DF<br />
                   </p>
                 </div>
@@ -199,7 +200,7 @@ const App: React.FC = () => {
 
             <div className="pt-16">
               <a href={CONTACT_INFO.calendly} target="_blank" rel="noopener noreferrer">
-                <Button variant="brand" className="px-20 py-6 text-xs shadow-2xl shadow-brand-500/10 hover:scale-105 active:scale-95">
+                <Button variant="green" className="px-20 py-6 text-xs shadow-2xl shadow-emerald-500/10 hover:scale-105 active:scale-95">
                   RESERVAR MEU HORÁRIO
                 </Button>
               </a>
@@ -208,7 +209,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Footer */}
-        <footer className="bg-zinc-950/90 backdrop-blur-md text-white py-12 md:py-16 border-t border-white/10">
+        <footer className="bg-white/90 backdrop-blur-md text-stone-900 py-12 md:py-16 border-t border-stone-200">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 items-start text-center">
             {/* Column 1: Brand */}
             <div className="flex flex-col items-center space-y-6">
@@ -216,7 +217,7 @@ const App: React.FC = () => {
                 <img
                   src="/logo.png"
                   alt="Logo"
-                  className="h-28 w-auto object-contain mb-2 filter brightness-110 drop-shadow-2xl"
+                  className="h-28 w-auto object-contain mb-2 filter drop-shadow-2xl"
                 />
               </div>
             </div>
@@ -224,7 +225,7 @@ const App: React.FC = () => {
             {/* Column 2: Navigation */}
             <div className="flex flex-col items-center">
               <h4 className="font-serif text-lg mb-6 text-brand-600 uppercase tracking-widest">Navegação</h4>
-              <ul className="space-y-6 text-[0.65rem] tracking-[0.2em] uppercase font-bold text-white/80">
+              <ul className="space-y-6 text-[0.65rem] tracking-[0.2em] uppercase font-bold text-stone-600">
                 <li><a href="#services" className="hover:text-brand-600 transition-colors">Procedimentos</a></li>
                 <li><a href="#about" className="hover:text-brand-600 transition-colors">A Especialista</a></li>
                 <li><a href="#schedule" className="hover:text-brand-600 transition-colors">Agendamento</a></li>
@@ -234,14 +235,14 @@ const App: React.FC = () => {
             {/* Column 3: Agenda */}
             <div className="flex flex-col items-center">
               <h4 className="font-serif text-lg mb-6 text-brand-600 uppercase tracking-widest">Agenda</h4>
-              <div className="text-[0.65rem] tracking-[0.15em] uppercase font-bold text-white space-y-4">
+              <div className="text-[0.65rem] tracking-[0.15em] uppercase font-bold text-stone-900 space-y-4">
                 <div>
-                  <span className="text-white block mb-1">Terça a Sexta</span>
-                  <span className="font-medium text-white/80">08:30 — 18:30</span>
+                  <span className="text-stone-900 block mb-1">Terça a Sexta</span>
+                  <span className="font-medium text-stone-600">08:30 — 18:30</span>
                 </div>
                 <div>
-                  <span className="text-white block mb-1">Sábado</span>
-                  <span className="font-medium text-white/80">08:30 — 17:30</span>
+                  <span className="text-stone-900 block mb-1">Sábado</span>
+                  <span className="font-medium text-stone-600">08:30 — 17:30</span>
                 </div>
               </div>
             </div>
@@ -254,9 +255,9 @@ const App: React.FC = () => {
                   href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-white/80 hover:text-brand-600 transition-all group"
+                  className="flex items-center gap-4 text-stone-700 hover:text-brand-600 transition-all group"
                 >
-                  <div className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center group-hover:border-brand-500/20 group-hover:bg-brand-500/5 transition-all">
+                  <div className="w-10 h-10 rounded-full border border-stone-200 flex items-center justify-center group-hover:border-brand-500/20 group-hover:bg-brand-500/5 transition-all">
                     <Instagram size={18} />
                   </div>
                   <span className="text-[0.6rem] tracking-[0.3em] uppercase font-bold">{CONTACT_INFO.instagram}</span>
@@ -266,9 +267,9 @@ const App: React.FC = () => {
                   href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-white/80 hover:text-brand-400 transition-all group"
+                  className="flex items-center gap-4 text-stone-700 hover:text-brand-600 transition-all group"
                 >
-                  <div className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center group-hover:border-brand-500/20 group-hover:bg-brand-500/5 transition-all">
+                  <div className="w-10 h-10 rounded-full border border-stone-200 flex items-center justify-center group-hover:border-brand-500/20 group-hover:bg-brand-500/5 transition-all">
                     <svg
                       viewBox="0 0 24 24"
                       width="20"
@@ -285,10 +286,11 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 flex flex-col items-center text-[0.55rem] tracking-[0.2em] uppercase font-black text-white/40 gap-4">
+          <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-stone-200 flex flex-col items-center text-[0.55rem] tracking-[0.2em] uppercase font-black text-stone-400 gap-4">
             <p>© {new Date().getFullYear()} Nathália Abreu Studio. Todos os direitos reservados.</p>
           </div>
         </footer>
+        <WhatsAppButton />
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled
-        ? 'bg-stone-900/60 backdrop-blur-xl py-3 shadow-2xl'
+        ? 'bg-white/80 backdrop-blur-xl py-3 shadow-lg border-b border-brand-100'
         : 'bg-transparent py-6'
         }`}
     >
@@ -60,7 +60,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
           <img
             src="/logo.png"
             alt="Nathalia Abreu Logo"
-            className="h-20 md:h-28 lg:h-32 w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-2xl brightness-110"
+            className="h-20 md:h-28 lg:h-32 w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-xl"
           />
         </div>
 
@@ -70,7 +70,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-white hover:text-brand-400 text-[0.65rem] uppercase tracking-[0.3em] font-black transition-all hover:-translate-y-0.5"
+              className="text-stone-800 hover:text-brand-400 text-[0.65rem] uppercase tracking-[0.3em] font-black transition-all hover:-translate-y-0.5"
             >
               {link.label}
             </a>
@@ -79,7 +79,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2 text-white flex flex-col items-center justify-center gap-1.5 focus:outline-none"
+          className="md:hidden p-2 text-stone-900 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -91,23 +91,23 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-stone-950/80 backdrop-blur-md z-[-1] transition-opacity duration-500 md:hidden ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        className={`fixed inset-0 bg-white/60 backdrop-blur-md z-[-1] transition-opacity duration-500 md:hidden ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         onClick={() => setIsOpen(false)}
       />
 
       {/* Mobile Menu Content */}
       <div
-        className={`fixed top-0 right-0 h-screen w-full max-w-sm bg-zinc-900/90 backdrop-blur-xl shadow-2xl z-50 flex flex-col p-12 transition-transform duration-500 ease-in-out md:hidden border-l border-white/5 ${isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 h-screen w-full max-w-sm bg-white/95 backdrop-blur-xl shadow-2xl z-50 flex flex-col p-12 transition-transform duration-500 ease-in-out md:hidden border-l border-brand-100 ${isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         <div className="flex justify-between items-center mb-16">
           <img
             src="/logo.png"
             alt="Nathália Abreu Logo"
-            className="h-20 w-auto object-contain filter drop-shadow-2xl brightness-110"
+            className="h-20 w-auto object-contain filter drop-shadow-xl"
           />
-          <button onClick={() => setIsOpen(false)} className="text-white hover:text-white">
+          <button onClick={() => setIsOpen(false)} className="text-stone-900 hover:text-brand-600 transition-colors">
             <X size={32} />
           </button>
         </div>
@@ -118,7 +118,7 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-3xl font-serif text-white hover:text-brand-400 flex items-center justify-between group"
+              className="text-3xl font-serif text-stone-900 hover:text-brand-400 flex items-center justify-between group"
               style={{ transitionDelay: `${index * 50}ms` }}
             >
               <span>{link.label}</span>
@@ -128,18 +128,18 @@ const Navbar: React.FC<{ dark?: boolean }> = () => {
         </nav>
 
         <div className="mt-16 space-y-8">
-          <div className="flex items-center gap-8 text-white/40">
+          <div className="flex items-center gap-8 text-stone-400">
             <a href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">
               <Instagram size={28} />
             </a>
-            <span className="text-[0.6rem] uppercase tracking-[0.2em] font-black">{CONTACT_INFO.instagram}</span>
+            <span className="text-[0.6rem] uppercase tracking-[0.2em] font-black text-stone-600">{CONTACT_INFO.instagram}</span>
           </div>
 
           <a
             href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-8 text-white/40 hover:text-brand-400 transition-all group"
+            className="flex items-center gap-8 text-stone-400 hover:text-brand-400 transition-all group"
           >
             <div className="transition-transform group-hover:scale-110">
               <svg
