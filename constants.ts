@@ -115,7 +115,7 @@ export const CONTACT_INFO = {
   instagram: '@ciliosdanathii_',
   address: 'Asa Sul, Brasília - DF',
   email: 'contato@nathaliaabreu.com.br',
-  calendly: 'https://calendly.com/gabrielmoreira486/30min'
+  calendly: 'https://calendly.com/ingridabs3/1h30min'
 };
 
 /*
